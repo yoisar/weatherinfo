@@ -16,5 +16,5 @@ This API was developed inside a Docker container with PHP 8.1.6, mariadb:10.6, a
 - 5.	Run **git restore .** (**include the point**)
 
 # API testing
--	Local test: You can test the endpoint by accessing [http://localhost:8170/api/current/query=New York](http://localhost:8170/api/current/query=New York)
--	Remote test: [http://challenges.lugaronline.com:8170/api/current/query=New York](http://challenges.lugaronline.com:8170/api/current/query=New York)
+-	Local test: You can test the endpoint by accessing http://localhost:8170/api/current/query=New York
+-	Remote test: http://challenges.lugaronline.com:8170/api/current/query=New York
