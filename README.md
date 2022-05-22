@@ -2,7 +2,7 @@
 Laravel Restful API with an endpoint that returns the current weather for any city from weatherstack.com using the weatherstack API. This saves the values ​​returned by the weather information in the database. If the same city is queried again during the same hour, the last saved value is returned from the database
 
 # Develpoment information
-This API was developed inside a Docker container with PHP 8.1.6, mariadb:10.6, and the Laravel Framework 9.13.0.
+This API was developed with PHP 8.1.6, mariadb:10.6, and the Laravel Framework 9.13.0. The development environment is inside a Docker container. The container configuration information is inside the docker-compose.yml file.
 
 # Requirements
 - **[Docker installed ](https://docs.docker.com/engine/install/centos/)**
@@ -16,5 +16,5 @@ This API was developed inside a Docker container with PHP 8.1.6, mariadb:10.6, a
 - 5.	Run **git restore .** (**include the point**)
 
 # API testing
--	Local test: You can test the endpoint by accessing http://localhost:8170/api/current/query=New York
--	Remote test: http://challenges.lugaronline.com:8170/api/current/query=New York
+-	**Local test**: http://localhost:8170/api/current/query=New York
+-	**Remote test**: http://challenges.lugaronline.com:8170/api/current/query=New York
