@@ -6,6 +6,7 @@ This API was developed with PHP 8.1.6, mariadb:10.6, and the Laravel Framework 9
 
 # Requirements
 - **[Docker installed ](https://docs.docker.com/engine/install/centos/)**
+- **[docker-compose installed](https://docs.docker.com/compose/install/)**
 - **[Git installed ](https://git-scm.com/downloads)**
 
 # Steps
