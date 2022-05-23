@@ -9,11 +9,15 @@ This API was developed with PHP 8.1.6, mariadb:10.6, and the Laravel Framework 9
 - **[Git installed ](https://git-scm.com/downloads)**
 
 # Steps
-- 1.	Open pc/mac terminal and go to a folder preferred by you.
-- 2.	With the terminal open and type **git clone https://github.com/yoisar/weatherinfo**
-- 3.	Run command **rm -f -r weather-app**
-- 4.	Run command **docker-compose up --build –d**
-- 5.	Run **git restore .** (**include the point**)
+- 1. Open pc/mac terminal and go to a folder preferred by you.
+- 2. Type **git clone https://github.com/yoisar/weatherinfo** to clone this repository in your preferred folder 
+- 3. Type **rm -f -r weather-app** command to remove weather-app  folder and prepare for build docker container
+- 4. Type **docker-compose up --build –d** command to build docker container
+- 5. Type **git restore .** (**include the point**) command to restore delete files with rm command
+- 6. Type **docker exec -ti weatherinfo_laravelapp_1 bash** to enter to docker container
+- 7. Type **php artisan migrate** to migrate weather database
+- 8. Type **exit** and taht´s all!
+
 
 # API testing
 -	**Local test**: http://localhost:8170/api/current/query=New York
