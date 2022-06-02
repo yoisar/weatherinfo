@@ -18,7 +18,7 @@ This API was developed with PHP 8.1.6, mariadb:10.6, and the Laravel Framework 9
 - 6. Type **docker exec -ti weatherinfo_laravelapp_1 bash** to enter to docker container
 - 7. Type **php artisan migrate** to migrate weather database
 - 8. Type **exit** and taht´s all!
-- 9. Open your browser and type http://localhost:8170 yoiu must see laravel welcome page
+- 9. Open your browser and type http://localhost:8170 then you must see laravel welcome page
 
 
 # API testing
