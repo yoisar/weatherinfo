@@ -23,7 +23,7 @@ services:
         ports:
             - '8170:8000'
         environment:
-            - DB_HOST=mariadb
+            - DB_HOST=wi-mariadb
             - DB_PORT=3306
             - DB_USERNAME=larevel_app
             - DB_DATABASE=larevel_app_db
