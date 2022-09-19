@@ -1,7 +1,10 @@
+# wi :  Weather information
 version: '2'
 
 services:
-    mariadb:
+    # Weather informacion DB service
+    wi-mariadb:
+        container_name: wi_mariadb
         image: docker.io/bitnami/mariadb:10.6
         environment:
             # ALLOW_EMPTY_PASSWORD is recommended only for development.
@@ -12,8 +15,10 @@ services:
             - '8171:3306'
         volumes:
             - './mariadb-persistence:/bitnami/mariadb'
-        restart: always        
-    laravelapp:
+        restart: always
+    # Weather laravel service
+    wi-laravel:
+        container_name: wi_laravel
         image: docker.io/bitnami/laravel:9
         ports:
             - '8170:8000'
@@ -25,4 +30,4 @@ services:
         volumes:
             - './weather-app:/app'
         depends_on:
-            - mariadb
+            - wi-mariadb
