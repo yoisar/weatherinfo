@@ -28,6 +28,6 @@ services:
             - DB_USERNAME=larevel_app
             - DB_DATABASE=larevel_app_db
         volumes:
-            - './weather-app:/app'
+            - './:/app'
         depends_on:
             - wi-mariadb
